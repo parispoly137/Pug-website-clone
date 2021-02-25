@@ -1,0 +1,28 @@
+include ../data/data
+include ../mixins/mixins
+  
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="css/style.css")
+    title #{siteName}
+  body 
+    block title
+      h1 #{siteName}
+
+    block pagination 
+      include ../includes/pagination
+
+    block main
+      #gallery
+        h2 Generic content!
+
+    block pagination 
+      include ../includes/pagination
+
+    block footer 
+      include ../includes/footer
+    
